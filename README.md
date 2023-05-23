@@ -27,7 +27,7 @@ proaches, we can also produce CEs for explanation,
 model debugging, and validation tasks, showing the
 versatility of the declarative approach to reasoning.
 
-![alt text](framework.pdf "NSVQASP Framework")
+![alt text](framework.png "NSVQASP Framework")
 
 ## Requirements
 
