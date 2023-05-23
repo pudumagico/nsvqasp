@@ -1,0 +1,13 @@
+[
+    {
+      "params": [],
+      "text": [
+        "Are all the objects in the image different?"      
+      ],
+      "nodes": [
+        {"type": "scene", "inputs": []},
+        {"type": "all_different", "inputs": [0]}
+      ],
+      "constraints": [] 
+    }
+  ]

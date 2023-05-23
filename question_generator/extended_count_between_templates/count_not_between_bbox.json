@@ -1,0 +1,44 @@
+[
+  {
+    "params": [
+      {"type": "Size", "name": "<Z>"},
+      {"type": "Color", "name": "<C>"},
+      {"type": "Material", "name": "<M>"},
+      {"type": "Shape", "name": "<S>"},
+      {"type": "Size", "name": "<Z2>"},
+      {"type": "Color", "name": "<C2>"},
+      {"type": "Material", "name": "<M2>"},
+      {"type": "Shape", "name": "<S2>"}
+    ],
+    "text": [
+      "How many objects are not in the bounding box made by the <Z> <C> <M> <S> and the <Z2> <C2> <M2> <S2>?"      
+    ],
+    "nodes": [
+      {"type": "scene", "inputs": []},
+      {"type": "filter_unique", "inputs": [0], "side_inputs": ["<Z>", "<C>", "<M>", "<S>"]},
+      {"type": "scene", "inputs": []},
+      {"type": "filter_unique", "inputs": [2], "side_inputs": ["<Z2>", "<C2>", "<M2>", "<S2>"]},
+      {"type": "count_between_bbox", "inputs": [1,3]},
+      {"type": "set_difference", "inputs": [4]}
+
+    ],
+    "constraints": [
+      {
+          "params": [
+              1,
+              3
+          ],
+          "type": "OUT_NEQ"
+      },
+      {
+          "params": [
+              3,
+              5
+          ],
+          "type": "OUT_NEQ"
+      }
+    ]
+    
+  }
+  
+]

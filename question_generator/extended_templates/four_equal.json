@@ -1,0 +1,13 @@
+[
+    {
+      "params": [],
+      "text": [
+        "Are there one or more sets of four equal objects in the image?"      
+      ],
+      "nodes": [
+        {"type": "scene", "inputs": []},
+        {"type": "four_equal", "inputs": [0]}
+      ],
+      "constraints": [] 
+    }
+  ]

@@ -8,128 +8,128 @@ import re
 import clingo
 
 id2cat = {
-  "0": "LaGraMeCy",
-  "1": "LaGraMeSp",
-  "2": "LaGraMeCu",
-  "3": "LaGraRuCy",
-  "4": "LaGraRuSp",
-  "5": "LaGraRuCu",
-  "6": "LaBlMeCy",
-  "7": "LaBlMeSp",
-  "8": "LaBlMeCu",
-  "9": "LaBlRuCy",
-  "10": "LaBlRuSp",
-  "11": "LaBlRuCu",
-  "12": "LaBrMeCy",
-  "13": "LaBrMeSp",
-  "14": "LaBrMeCu",
-  "15": "LaBrRuCy",
-  "16": "LaBrRuSp",
-  "17": "LaBrRuCu",
-  "18": "LaYeMeCy",
-  "19": "LaYeMeSp",
-  "20": "LaYeMeCu",
-  "21": "LaYeRuCy",
-  "22": "LaYeRuSp",
-  "23": "LaYeRuCu",
-  "24": "LaReMeCy",
-  "25": "LaReMeSp",
-  "26": "LaReMeCu",
-  "27": "LaReRuCy",
-  "28": "LaReRuSp",
-  "29": "LaReRuCu",
-  "30": "LaGreMeCy",
-  "31": "LaGreMeSp",
-  "32": "LaGreMeCu",
-  "33": "LaGreRuCy",
-  "34": "LaGreRuSp",
-  "35": "LaGreRuCu",
-  "36": "LaPuMeCy",
-  "37": "LaPuMeSp",
-  "38": "LaPuMeCu",
-  "39": "LaPuRuCy",
-  "40": "LaPuRuSp",
-  "41": "LaPuRuCu",
-  "42": "LaCyMeCy",
-  "43": "LaCyMeSp",
-  "44": "LaCyMeCu",
-  "45": "LaCyRuCy",
-  "46": "LaCyRuSp",
-  "47": "LaCyRuCu",
-  "48": "SmGraMeCy",
-  "49": "SmGraMeSp",
-  "50": "SmGraMeCu",
-  "51": "SmGraRuCy",
-  "52": "SmGraRuSp",
-  "53": "SmGraRuCu",
-  "54": "SmBlMeCy",
-  "55": "SmBlMeSp",
-  "56": "SmBlMeCu",
-  "57": "SmBlRuCy",
-  "58": "SmBlRuSp",
-  "59": "SmBlRuCu",
-  "60": "SmBrMeCy",
-  "61": "SmBrMeSp",
-  "62": "SmBrMeCu",
-  "63": "SmBrRuCy",
-  "64": "SmBrRuSp",
-  "65": "SmBrRuCu",
-  "66": "SmYeMeCy",
-  "67": "SmYeMeSp",
-  "68": "SmYeMeCu",
-  "69": "SmYeRuCy",
-  "70": "SmYeRuSp",
-  "71": "SmYeRuCu",
-  "72": "SmReMeCy",
-  "73": "SmReMeSp",
-  "74": "SmReMeCu",
-  "75": "SmReRuCy",
-  "76": "SmReRuSp",
-  "77": "SmReRuCu",
-  "78": "SmGreMeCy",
-  "79": "SmGreMeSp",
-  "80": "SmGreMeCu",
-  "81": "SmGreRuCy",
-  "82": "SmGreRuSp",
-  "83": "SmGreRuCu",
-  "84": "SmPuMeCy",
-  "85": "SmPuMeSp",
-  "86": "SmPuMeCu",
-  "87": "SmPuRuCy",
-  "88": "SmPuRuSp",
-  "89": "SmPuRuCu",
-  "90": "SmCyMeCy",
-  "91": "SmCyMeSp",
-  "92": "SmCyMeCu",
-  "93": "SmCyRuCy",
-  "94": "SmCyRuSp",
-  "95": "SmCyRuCu"
+    "0": "LaGraMeCy",
+    "1": "LaGraMeSp",
+    "2": "LaGraMeCu",
+    "3": "LaGraRuCy",
+    "4": "LaGraRuSp",
+    "5": "LaGraRuCu",
+    "6": "LaBlMeCy",
+    "7": "LaBlMeSp",
+    "8": "LaBlMeCu",
+    "9": "LaBlRuCy",
+    "10": "LaBlRuSp",
+    "11": "LaBlRuCu",
+    "12": "LaBrMeCy",
+    "13": "LaBrMeSp",
+    "14": "LaBrMeCu",
+    "15": "LaBrRuCy",
+    "16": "LaBrRuSp",
+    "17": "LaBrRuCu",
+    "18": "LaYeMeCy",
+    "19": "LaYeMeSp",
+    "20": "LaYeMeCu",
+    "21": "LaYeRuCy",
+    "22": "LaYeRuSp",
+    "23": "LaYeRuCu",
+    "24": "LaReMeCy",
+    "25": "LaReMeSp",
+    "26": "LaReMeCu",
+    "27": "LaReRuCy",
+    "28": "LaReRuSp",
+    "29": "LaReRuCu",
+    "30": "LaGreMeCy",
+    "31": "LaGreMeSp",
+    "32": "LaGreMeCu",
+    "33": "LaGreRuCy",
+    "34": "LaGreRuSp",
+    "35": "LaGreRuCu",
+    "36": "LaPuMeCy",
+    "37": "LaPuMeSp",
+    "38": "LaPuMeCu",
+    "39": "LaPuRuCy",
+    "40": "LaPuRuSp",
+    "41": "LaPuRuCu",
+    "42": "LaCyMeCy",
+    "43": "LaCyMeSp",
+    "44": "LaCyMeCu",
+    "45": "LaCyRuCy",
+    "46": "LaCyRuSp",
+    "47": "LaCyRuCu",
+    "48": "SmGraMeCy",
+    "49": "SmGraMeSp",
+    "50": "SmGraMeCu",
+    "51": "SmGraRuCy",
+    "52": "SmGraRuSp",
+    "53": "SmGraRuCu",
+    "54": "SmBlMeCy",
+    "55": "SmBlMeSp",
+    "56": "SmBlMeCu",
+    "57": "SmBlRuCy",
+    "58": "SmBlRuSp",
+    "59": "SmBlRuCu",
+    "60": "SmBrMeCy",
+    "61": "SmBrMeSp",
+    "62": "SmBrMeCu",
+    "63": "SmBrRuCy",
+    "64": "SmBrRuSp",
+    "65": "SmBrRuCu",
+    "66": "SmYeMeCy",
+    "67": "SmYeMeSp",
+    "68": "SmYeMeCu",
+    "69": "SmYeRuCy",
+    "70": "SmYeRuSp",
+    "71": "SmYeRuCu",
+    "72": "SmReMeCy",
+    "73": "SmReMeSp",
+    "74": "SmReMeCu",
+    "75": "SmReRuCy",
+    "76": "SmReRuSp",
+    "77": "SmReRuCu",
+    "78": "SmGreMeCy",
+    "79": "SmGreMeSp",
+    "80": "SmGreMeCu",
+    "81": "SmGreRuCy",
+    "82": "SmGreRuSp",
+    "83": "SmGreRuCu",
+    "84": "SmPuMeCy",
+    "85": "SmPuMeSp",
+    "86": "SmPuMeCu",
+    "87": "SmPuRuCy",
+    "88": "SmPuRuSp",
+    "89": "SmPuRuCu",
+    "90": "SmCyMeCy",
+    "91": "SmCyMeSp",
+    "92": "SmCyMeCu",
+    "93": "SmCyRuCy",
+    "94": "SmCyRuSp",
+    "95": "SmCyRuCu"
 }
 
 short2long = {
-  "sizes": {
-    "La": "large",
-    "Sm": "small"
-  },
-  "shapes": {
-    "Cy": "cylinder",
-    "Sp": "sphere",
-    "Cu": "cube"
-  },
-  "materials": {
-    "Me": "metal",
-    "Ru": "rubber"
-  },
-  "colors": {
-    "Gra": "gray",
-    "Bl": "blue",
-    "Br": "brown",
-    "Ye": "yellow",
-    "Re": "red",
-    "Gre": "green",
-    "Pu": "purple",
-    "Cy": "cyan"
-  }
+    "sizes": {
+        "La": "large",
+        "Sm": "small"
+    },
+    "shapes": {
+        "Cy": "cylinder",
+        "Sp": "sphere",
+        "Cu": "cube"
+    },
+    "materials": {
+        "Me": "metal",
+        "Ru": "rubber"
+    },
+    "colors": {
+        "Gra": "gray",
+        "Bl": "blue",
+        "Br": "brown",
+        "Ye": "yellow",
+        "Re": "red",
+        "Gre": "green",
+        "Pu": "purple",
+        "Cy": "cyan"
+    }
 }
 
 func_type = {
@@ -137,14 +137,15 @@ func_type = {
               "query_size", "query_color", "query_material", "query_shape",
               "two_equal", "three_equal", "four_equal", "all_different",
               "exactly_two_equal", "exactly_three_equal", "exactly_four_equal",
-              "count_different", 
+              "count_different",
               "set_difference",
               "filter_size", "filter_color", "filter_material", "filter_shape", "same_size", "same_color", "same_material", "same_shape"],
     "binary": ["count_between_projection", "count_between_bbox", "count_between_proper",
-            "equal_integer", "less_than", "greater_than", "equal_size", "equal_color", "equal_shape",
+               "equal_integer", "less_than", "greater_than", "equal_size", "equal_color", "equal_shape",
                "equal_material", "union", "intersect"],
     "ternary": ["between_projection", "between_bbox", "between_proper"]
 }
+
 
 def gt_scene(scene):
     obj_template = 'obj({},{},{},{},{},{},{},{}).'
@@ -155,11 +156,12 @@ def gt_scene(scene):
         color = obj['color']
         material = obj['material']
         shape = obj['shape']
-        x1=obj['pixel_coords'][0]
-        y1=obj['pixel_coords'][1]
-        obj_fact = obj_template.format(0,id,size,color,material,shape,x1,y1)
+        x1 = obj['pixel_coords'][0]
+        y1 = obj['pixel_coords'][1]
+        obj_fact = obj_template.format(
+            0, id, size, color, material, shape, x1, y1)
         id += 1
-        facts+=obj_fact
+        facts += obj_fact
     return facts
 
 
@@ -170,7 +172,7 @@ def vision2facts(objects):
     facts = ''
     id = 0
     scale = 1
-    
+
     for obj in objects:
         # short_cat = id2cat[str(int(obj[0].item()))]
         # if obj[4] > 0.9:
@@ -196,10 +198,11 @@ def vision2facts(objects):
         # width = obj[3]
         # heigth = obj[4]
         # obj_fact = obj_template.format(0,id,size,color,material,shape,x1,y1,x2,y2)
-        obj_fact = obj_template.format(0,id,size,color,material,shape,x_center,y_center)
-        conf_fact = confidence_template.format(id,round(obj[4]*100))
+        obj_fact = obj_template.format(
+            0, id, size, color, material, shape, x_center, y_center)
+        conf_fact = confidence_template.format(id, round(obj[4]*100))
         id += 1
-        facts+=obj_fact+conf_fact
+        facts += obj_fact+conf_fact
     return facts
 
 
@@ -278,10 +281,12 @@ def clean_facts(tree):
 
     return tree
 
+
 def language2facts(encoding, vocab):
     encoding = [i for i in encoding if i != 0]
     try:
-        tree = regenerate_tree([], encoding[:len(encoding)-1], len(encoding) - 1, vocab)
+        tree = regenerate_tree(
+            [], encoding[:len(encoding)-1], len(encoding) - 1, vocab)
         facts = nodes_from_tree(tree, [])
         head_fact = facts[0]
         last_step = int(re.findall(r'\d+', head_fact)[0])
@@ -291,14 +296,15 @@ def language2facts(encoding, vocab):
 
 
 def regenerate_tree(tree, encoding, current_idx, vocab):
-    
+
     token = vocab['program_idx_to_token'][encoding[0].item()]
-    
+
     if any(p in token for p in func_type['unary']) and 'count_between' not in token:
         tree.append(token + '(' + str(current_idx-1) + ').')
 
         if encoding[1:]:
-            only_branch = regenerate_tree([], encoding[1:], current_idx-1, vocab)
+            only_branch = regenerate_tree(
+                [], encoding[1:], current_idx-1, vocab)
             tree.append(only_branch)
 
     elif any(q in token for q in func_type['binary']):
@@ -316,29 +322,29 @@ def regenerate_tree(tree, encoding, current_idx, vocab):
         tree.append(right_branch)
 
     elif any(q in token for q in func_type['ternary']):
-        
+
         scene_index = vocab['program_token_to_idx']['scene']
         indices = [i for i, x in enumerate(encoding) if x == scene_index]
         first_index = indices[0]
         second_index = indices[1]
 
-        tree.append(token + '(' 
-                    + str(current_idx - 1) + 
+        tree.append(token + '('
+                    + str(current_idx - 1) +
                     ',' + str(len(encoding) - first_index - 1) +
-                    ',' + str(len(encoding) - second_index - 1) + 
+                    ',' + str(len(encoding) - second_index - 1) +
                     ').')
-        
+
         left_branch = regenerate_tree(
             [], encoding[1:first_index+1], current_idx - 1, vocab)
         middle_branch = regenerate_tree(
             [], encoding[first_index+1:second_index+1], current_idx - first_index - 1, vocab)
         right_branch = regenerate_tree(
             [], encoding[second_index+1:], current_idx - second_index - 1, vocab)
-        
+
         tree.append(left_branch)
         tree.append(middle_branch)
         tree.append(right_branch)
-    
+
     return tree
 
 
@@ -408,6 +414,7 @@ def load_scenes(scenes_json):
 def load_embedding(path):
     return torch.Tensor(np.load(path))
 
+
 def find_clevr_question_type(out_mod):
     if out_mod == 'count':
         q_type = 'count'
@@ -429,7 +436,26 @@ def find_clevr_question_type(out_mod):
         q_type = out_mod
     return q_type
 
+class Context:
 
+    def dist2(self, v, w):
+        return (v[0] - w[0])**2 + (v[1] - w[1])**2
+
+    def distToSegmentSquared(self, p, v, w):
+        l2 = self.dist2(v, w)
+        if l2 == 0:
+            return self.dist2(p, v)
+        t = ((p[0] - v[0]) * (w[0] - v[0]) +
+             (p[1] - v[1]) * (w[1] - v[1])) / l2
+        t = max(0, min(1, t))
+        return self.dist2(p, [v[0] + t * (w[0] - v[0]), v[1] + t * (w[1] - v[1])])
+
+    def distToSegment(self, p, v, w):
+        p = [p.arguments[0].number, p.arguments[1].number]
+        v = [v.arguments[0].number, v.arguments[1].number]
+        w = [w.arguments[0].number, w.arguments[1].number]
+        dist = math.sqrt(self.distToSegmentSquared(p, v, w))
+        return clingo.Number(round(dist))
 
 stats = {
     'total': 0,
@@ -511,24 +537,3 @@ stats = {
     'set_difference_tot': 0
 
 }
-
-class Context:
-
-    def dist2(self, v, w):
-        return (v[0] - w[0])**2 + (v[1] - w[1])**2
-
-    def distToSegmentSquared(self, p, v, w):
-        l2 = self.dist2(v, w)
-        if l2 == 0:
-            return self.dist2(p, v)
-        t = ((p[0] - v[0]) * (w[0] - v[0]) +
-             (p[1] - v[1]) * (w[1] - v[1])) / l2
-        t = max(0, min(1, t))
-        return self.dist2(p, [v[0] + t * (w[0] - v[0]), v[1] + t * (w[1] - v[1])])
-
-    def distToSegment(self, p, v, w):
-        p = [p.arguments[0].number, p.arguments[1].number]
-        v = [v.arguments[0].number, v.arguments[1].number]
-        w = [w.arguments[0].number, w.arguments[1].number]
-        dist = math.sqrt(self.distToSegmentSquared(p, v, w))
-        return clingo.Number(round(dist))

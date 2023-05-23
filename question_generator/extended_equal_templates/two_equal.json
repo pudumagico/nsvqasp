@@ -1,0 +1,13 @@
+[
+    {
+      "params": [],
+      "text": [
+        "Are there one or more sets of two equal objects in the image?"      
+      ],
+      "nodes": [
+        {"type": "scene", "inputs": []},
+        {"type": "two_equal", "inputs": [0]}
+      ],
+      "constraints": [] 
+    }
+  ]

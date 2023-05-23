@@ -1,0 +1,13 @@
+[
+    {
+      "params": [],
+      "text": [
+        "How many different objects are in the image?"      
+      ],
+      "nodes": [
+        {"type": "scene", "inputs": []},
+        {"type": "count_different", "inputs": [0]}
+      ],
+      "constraints": [] 
+    }
+  ]

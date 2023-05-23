@@ -1,0 +1,13 @@
+[
+    {
+      "params": [],
+      "text": [
+        "Is there exactly one set of three equal objects in the image?"      
+      ],
+      "nodes": [
+        {"type": "scene", "inputs": []},
+        {"type": "exactly_three_equal", "inputs": [0]}
+      ],
+      "constraints": [] 
+    }
+  ]
