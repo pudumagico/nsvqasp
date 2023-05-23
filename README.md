@@ -147,3 +147,7 @@ for Artificial Intelligence. Furthermore, Tobias Geibinger is
 a recipient of a DOC Fellowship of the Austrian Academy of
 Sciences at the Institute of Logic and Computation at the TU
 Wien.
+
+## Contact
+
+For any questions, please feel free to contact **nhiguera@kr.tuwien.ac.at**.
